@@ -85,3 +85,25 @@ footer {
     background-color: #b1e016;
     text-align: center;
 }
+
+@media screen and (max-width:500px) {
+    .textBg {
+    padding: 10px;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+}
+@media screen and (max-width:420px) {
+    .textBg {
+    padding: 5px;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+}
+@media screen and (max-width:350px) {
+    .textBg {
+    padding: 5px;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+}
