@@ -27,6 +27,7 @@ body {
 .newimg1,
 .newimg2,
 .newimg3 {
+    background-attachment: fixed;/*fixed the image*/
     image-rendering: crisp-edges;
     image-rendering: pixelated;
     position: relative;
