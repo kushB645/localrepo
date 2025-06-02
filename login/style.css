@@ -154,3 +154,42 @@ form textarea:focus {
   outline: none;
   border-color: #555;
 }
+
+button[type="submit"] {
+  background-color: hsl(246, 39%, 49%);  
+  color: white;               
+  padding: 12px 24px;         
+  border: none;               
+  border-radius: 6px;         
+  font-size: 16px;            
+  cursor: pointer;            
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+  position: relative;
+  bottom: 5px;
+  background-color: #45a049;  
+}
+.login {
+  position: absolute;
+  top: 20px;
+  left: 120px;
+}
+.login ul li a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.login ul { /*to remove li or dot */
+  list-style: none;
+}
+.login ul li a:hover {
+    position: relative;
+     bottom:5px;
+  background-color: #555;
+}
