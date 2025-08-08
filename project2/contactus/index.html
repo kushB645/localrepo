@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <script src="https://kit.fontawesome.com/659884c625.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="goback">
+    <nav>
+        <button type="submit"><a href="..\index.html">HOME</a></button>
+    </nav>
+    </div>
+    <div class="map">
+        <div class="pics">
+            <img src="images/m.jpg" height="800px">
+        </div>
+        <div class="just">
+        <div class="text">
+            <h1>CONTACT US. <br> Get In Touch.</h1>
+            <h5>LEAVE US A MESSAGE.</h5>
+            </div>
+        <div class="contactus">
+            <form>
+                <div class="final">
+                <div>
+                    <label for="name"><i class="fa-solid fa-user-check"></i>NAME:</label>
+                    <input type="text" id="name" placeholder="Enter Your Name..." required>
+                </div>
+                <div>
+                    <label for="email"><i class="fa-solid fa-envelope"></i>EMAIL:</label>
+                    <input type="email" id="email" placeholder="Enter Your Email..." required>
+                </div>
+                </div>
+                <div>
+                    <label for="message"><i class="fa-solid fa-message"></i>MESSAGE:</label>
+                    <textarea name="message" id="message" placeholder="Enter Your Message..." required></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <!-- main  -->
+    <div class="main">
+        <p><b>Quick. <br> Support</b></p>
+        <span>You Can Get The All Contact Information.<i class="fa-solid fa-down-long"></i></span>
+    </div> 
+    <section class="features">
+        <div class="feature">
+            <img src="images/direction.png" height="60px">
+            <div class="feature_content">
+                <h3><b>Visit Us</b></h3>
+                <p> You can visit nearest center <br> to your house.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img src="images/call.png" height="60px">
+            <div class="feature_content">
+                <h3><b>Call Us</b></h3>
+                <p> You can call us on our customer <br> help line number.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img src="images/email.png" height="60px">
+            <div class="feature_content">
+                <h3><b>Email Us</b></h3>
+                <p> You can email us on out customer <br> care email id.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+
+    <footer>
+        <div class="container">
+            <div class="linklist">
+                <h3>Support</h3>
+                <ul>
+                    <li>News & blogs</li>
+                    <li>About us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Condition</li>
+                </ul>
+            </div>
+            <div class="connect">
+                <h3>Join Us</h3>
+                <input type="email" placeholder="Enter Your Email...">
+                <h3>Follow Us</h3>
+                <div class="icon_container">
+                    <div class="icon">
+                        <a href="https://www.facebook.com">
+                            <i class="fa fa-facebook" style="color: blue;"></i>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.twitter.com">
+                            <i class="fa fa-twitter" style="color: white;"></i>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.instagram.com">
+                            <i class="fa fa-instagram" style="color: pink;"></i>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.youtube.com">
+                            <i class="fa fa-youtube" style="color: red;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+  const darkToggle = document.getElementById('darkToggle');
+  const themeIcon = document.getElementById('themeIcon');
+
+  // Apply dark mode on page load if previously enabled
+  const isDark = localStorage.getItem('dark-mode') === 'true';
+  if (isDark) {
+    document.body.classList.add('dark-mode');
+    themeIcon.classList.replace('fa-moon', 'fa-sun');
+  }
+
+  // Toggle on click
+  darkToggle.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.body.classList.toggle('dark-mode');
+
+    const isNowDark = document.body.classList.contains('dark-mode');
+    localStorage.setItem('dark-mode', isNowDark);
+
+    // Switch icon
+    if (isNowDark) {
+      themeIcon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+      themeIcon.classList.replace('fa-sun', 'fa-moon');
+    }
+  });
+</script>
+</body>
+</html>

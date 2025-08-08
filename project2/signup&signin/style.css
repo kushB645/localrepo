@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    background-color: goldenrod;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid black;
+    padding: 40px;
+    width: fit-content;
+    margin: 100px auto;
+}
+
+.main:hover {
+    position: relative;
+    bottom: 4px;
+    transition: 0.2s ease-in-out;
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sign div {
+    margin-bottom: 15px;
+}
+
+.sign div label {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign input {
+    padding: 5px 40px;
+    margin-bottom: 10px;
+}
+
+.sign textarea {
+    padding: 5px 40px;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+
+    background-color: rgb(54, 54, 119);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    position: relative;
+    bottom: 2px;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(8, 123, 216);
+}
+@media(max-width:1059px)
+{
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.sign input:hover {
+    position: relative;
+    bottom: 2px;
+    transition: 0.2s ease-in-out;
+}
+
+.sign textarea:hover {
+    position: relative;
+    bottom: 2px;
+    transition: 0.2s ease-in-out;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode nav {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+body.dark-mode .slides {
+    background-color: #222;
+}
+
+body.dark-mode .content h1,
+body.dark-mode .feature_content h3,
+body.dark-mode .tag {
+    color: #ffcc00;
+}
+
+body.dark-mode .tag {
+    background-color: #333;
+}
+
+body.dark-mode .explore {
+    background-color: #ffcc00;
+    color: black;
+}
+
+body.dark-mode footer {
+    background-color: #000;
+}
+
+body.dark-mode input,
+body.dark-mode .newsletter input {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark-mode .slides a {
+    color: #ffcc00;
+}
+/* Animation for dark mode fade */
+@keyframes fadeDarkMode {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Transition for smooth color change */
+body,
+nav,
+.slides,
+.content h1,
+.feature_content h3,
+.tag,
+.explore,
+footer,
+input,
+.newsletter input {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+  animation: fadeDarkMode 0.4s ease;
+}
+
+body.dark-mode nav {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .slides {
+  background-color: #222;
+}
+
+body.dark-mode .slides a {
+  color: #ffcc00;
+}
+
+body.dark-mode .content h1,
+body.dark-mode .feature_content h3,
+body.dark-mode .tag {
+  color: #ffcc00;
+}
+
+body.dark-mode .tag {
+  background-color: #333;
+}
+
+body.dark-mode .explore {
+  background-color: #ffcc00;
+  color: black;
+}
+
+body.dark-mode footer {
+  background-color: #000;
+}
+
+body.dark-mode input,
+body.dark-mode .newsletter input {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}

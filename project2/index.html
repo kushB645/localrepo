@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <script src="https://kit.fontawesome.com/659884c625.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="navigation container">
+            <div class="logo_container">
+                <img src="images/logo.jpg" height="60px">
+            </div>
+            <input type="checkbox" id="menu-toggle" hidden>
+
+            <label for="menu-toggle" class="bars">
+                <i class="fa-solid fa-bars"></i>
+                </label>
+                <div class="slides">
+            <ul>
+                <li>
+                    <a href="signup&signin/signin.html"><i class="fa-regular fa-user"></i></i>Sign In</a>
+                </li>
+                <li>
+                    <a href="signup&signin/index.html"><i class="fa-solid fa-user-plus"></i></i>Sign up</a>
+                </li>
+                </li>
+                <li>
+                    <a href="#" id="darkToggle">
+                        <i id="themeIcon" class="fa-regular fa-moon"></i> Dark Mode
+                    </a>
+                </li>
+
+
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- main page -->
+     <div class="container">
+        <div class="hero">
+            <div class="pic">
+                <img src="images/food.jpg" height="450">
+            </div>
+            <div class="content">
+                <div class="tag">
+                    50% off on all food</div>
+                    <h1>Enjoy Your Delicious Food</h1>
+                    <p>
+                        A food web illustrates interconnected feeding relationships, showcasing energy flow through multiple food chains in an ecosystem. 
+                    </p>
+                    <button class="explore">
+                        Explore Now
+                    </button>
+            </div>
+        </div>
+        <section class="features">
+            <div class="feature">
+                <img src="images/discount.png" height="120px">
+                <div class="feature_content">
+                    <h3>Discount Voucher</h3>
+                    <p>"Enjoy delicious food, save now with our offer!</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <img src="images/fresh1.png" height="100px">
+                <div class="feature_content">
+                    <h3>Fresh Healthy Food</h3>
+                    <p>"Fresh food: Taste the vibrant health.</p>
+                </div>
+            </div>
+        
+            <div class="feature">
+                <img src="images/delivery.png" height="100px">
+                <div class="feature_content">
+                    <h3>Delivery On Time</h3>
+                    <p>Hot food, fast, delivered on time, every time. </p>
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <div class="menu">
+            <div class="tag">Our Menu</div>
+            <h1>Explore Our Menu</h1>
+
+            <div class="grid">
+                <div class="item1">
+                    <img class="grid_img" src="images/grid_image1.png">
+                </div>
+                 <div class="item2">
+                    <img class="grid_img" src="images/grid_image2.png">
+                </div>
+                 <div class="item3">
+                    <img class="grid_img" src="images/grid_image3.png">
+                </div>
+                 <div class="item4">
+                    <img class="grid_img" src="images/grid_image4.png">
+                </div>
+                 <div class="item5">
+                    <img class="grid_img" src="images/grid_image5.png">
+                </div>
+                 <div class="item6">
+                    <img class="grid_img" src="images/grid_image6.png">
+                </div>
+                 <div class="item7">
+                    <img class="grid_img" src="images/grid_image7.png">
+                </div>
+            </div>
+        </div>
+     </div>
+     <footer>
+        <div class="footer_container container">
+            <div class="footer_logo">
+                <img src="images/logo.jpg" height="100px">
+            </div>
+            <div class="linklist">
+                <h3>Main Links</h3>
+                <ul>
+                    <li>Order Tracking</li>
+                    <li>New Order</li>
+                    <li><a href="contactus/index.html">Contact Us</a></li>
+                    <li>News & Blogs</li>
+                </ul>
+            </div>
+            <div class="linklist">
+                <h3>Support</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h3>Join us</h3>
+                <input type="email" placeholder="Enter Your Email...">
+                <h3>Follow Us</h3>
+                <div class="icon_container">
+                    <div class="icon">
+                    <a href="https://www.facebook.com">
+                    <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.twitter.com">
+                    <i class="fa fa-twitter"style="color: white;"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.instagram.com">
+                    <i class="fa fa-instagram"style="color: pink;"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.youtube.com">
+                    <i class="fa fa-youtube"style="color: red;"></i>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+     </footer>
+     <script>
+  const darkToggle = document.getElementById('darkToggle');
+  const themeIcon = document.getElementById('themeIcon');
+
+  // Apply dark mode on page load if previously enabled
+  const isDark = localStorage.getItem('dark-mode') === 'true';
+  if (isDark) {
+    document.body.classList.add('dark-mode');
+    themeIcon.classList.replace('fa-moon', 'fa-sun');
+  }
+
+  // Toggle on click
+  darkToggle.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.body.classList.toggle('dark-mode');
+
+    const isNowDark = document.body.classList.contains('dark-mode');
+    localStorage.setItem('dark-mode', isNowDark);
+
+    // Switch icon
+    if (isNowDark) {
+      themeIcon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+      themeIcon.classList.replace('fa-sun', 'fa-moon');
+    }
+  });
+</script>
+
+</body>
+</html>
